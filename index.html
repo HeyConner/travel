@@ -7,8 +7,8 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap copy/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css">
-    <link href="styles.js"
+    <link rel="stylesheet" type"text/css" href="styles.css">
+    <link href="styles.js">
 
 
 
@@ -17,15 +17,15 @@
 
     <div class="container">
 
-        <h2 class="text-align center">Travel Suggestions</h2>
+        <h2 class="text text-center">Travel Suggestions</h2>
       </header>
 
       <div class="jumbotron">
         <div class="container">
 
 
-          <h2>If you arent satisfied, check out our partner site, Expedia!</h2>
-          <a class="btn btn-primary" href="https://www.expedia.com/" role="button">Expedia</a>
+          <h2><marquee>If you arent satisfied, check out our partner site, Expedia!</marquee></h2>
+          <a class="btn btn-primary btn-lg" href="https://www.expedia.com/" role="button">Expedia</a>
 
 
 
@@ -33,41 +33,45 @@
       </div>
     </div>
 
-  <div id="blanks">
+
     <div class="container-fluid">
       <div class="row">
 
 <h4>Vacation Temperature</h4>
-
+  <div id="vacation">
     <div class="col-md-3"><form>
-        <input type="radio" name="gender" value="male"> <strong>Hot</strong><br>
-        <input type="radio" name="gender" value="female"> <strong>Cool</strong><br>
-        <input type="radio" name="gender" value="other"> <strong>Icy</strong>
+        <input id="hot" type="radio" name="temp" value="hot"> <strong>Hot</strong><br>
+        <input id="cool" type="radio" name="temp" value="cool"> <strong>Cool</strong><br>
+        <input id="icy" type="radio" name="temp" value="icy"> <strong>Icy</strong>
       </form></div>
+    </div>
 
-<h4>Family Size</h4>
-
+      <h4>Family Size</h4>
+      <div id="family">
         <div class="col-md-3"><form>
-        <input type="radio" name="family" value="single"> <strong>1</strong><br>
-        <input type="radio" name="family" value="married"> <strong>2</strong><br>
-        <input type="radio" name="family" value="children"><strong>Other</strong>
-      </form></div>
+          <input id="single" type="radio" name="family" value="single"> <strong>1</strong><br>
+          <input id="married" type="radio" name="family" value="married"> <strong>2</strong><br>
+          <input id="kids" type="radio" name="family" value="children"><strong>Other</strong>
+        </form></div>
+      </div>
 
-<h4>Food Preference</h4>
+        <h4>Food Preference</h4>
 
-        <div class="col-md-3"><form>
-        <input type="radio" name="food" value="savory" ><strong>Savory</strong> <br>
-        <input type="radio" name="food" value="sweet"><strong>Sweet</strong> <br>
-        <input type="radio" name="food" value="sour"><strong>Sour</strong>
-      </form></div>
-<h4>Budget</h4>
-        <div class="col-md-3"><form>
-        <input type="radio" name="budget" value="1000-2000"><strong>1000$-2000$</strong><br>
-        <input type="radio" name="budget" value="2000-5000"><strong>2000$-5000$</strong><br>
-        <input type="radio" name="budget" value="5000"><strong>5000$+</strong>
+
+    <div id="food">
+        <form>
+      <div class="col-md-3">
+        <input id="burger" type="radio" name="food" value="burger" checked><strong> Burger</strong><br>
+        <input id="fish" type="radio" name="food" value="fish"> <strong>Fish<strong><br>
+          <input id="pizza" type="radio" name="food" value="pizza"><strong>Pizza</strong>
         </form>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h1>You're Suggested Destination is...</h1>
+
+<h1 class="col-sm-1">You're Suggested Destination is...</h1>
         </div>
       </div>
     </div>
@@ -84,11 +88,16 @@
 
     <div id="pnw">
       <h1>The Great Pacific Northwest.</h1>
-      <img class="img-responsive" src="https://images.trvl-media.com/media/content/shared/images/travelguides/destination/178299/Portland-20917.jpg" alt="P-Town" />
+      <img class="img-responsive" src="https://images.trvl-media.com/media/content/shared/images/travelguides/destination/178299/Portland-20917.jpg" alt="P-Town" /></div>
 
-    </div>
+      <div id="korea">
+        <h1>North Korea.</h1>
+        <img class="img-responsive" src="http://cdn.newsapi.com.au/image/v1/15e03fedeb415b6b804be55cb9201d64" alt="korea" />
   </div>
-
+       <div id="newyork">
+         <h1>New York, New York.</h1>
+         <img class="img-responsive" src="http://enpundit.s3.amazonaws.com/wp-content/uploads/2013/05/nyc-skyline-earth-2.jpg" alt="New York" />
+</div>
 
   </body>
 </html>
