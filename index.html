@@ -1,107 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" >
   <head>
-
-
     <title>Travel With Conner!</title>
-
-    <!-- Bootstrap -->
-    <link href="bootstrap copy/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type"text/css" href="styles.css">
-    <link href="styles.js">
-
-
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type"text/css" href="css/styles.css">
+    <script src="jquery-1.12.0.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body>
-
     <div class="container">
-
-        <h2 class="text text-center">Travel Suggestions</h2>
-      </header>
-
+      <h2 class="text text-center">Travel Suggestions</h2>
       <div class="jumbotron">
         <div class="container">
-
-
           <h2><marquee>If you arent satisfied, check out our partner site, Expedia!</marquee></h2>
           <a class="btn btn-primary btn-lg" href="https://www.expedia.com/" role="button">Expedia</a>
-
-
-
-        </p>
       </div>
     </div>
-
-
+  </div>
     <div class="container-fluid">
       <div class="row">
 
-<h4>Vacation Temperature</h4>
-  <div id="vacation">
-    <div class="col-md-3"><form>
-        <input id="hot" type="radio" name="temp" value="hot"> <strong>Hot</strong><br>
-        <input id="cool" type="radio" name="temp" value="cool"> <strong>Cool</strong><br>
-        <input id="icy" type="radio" name="temp" value="icy"> <strong>Icy</strong>
-      </form></div>
-    </div>
-
-      <h4>Family Size</h4>
-      <div id="family">
-        <div class="col-md-3"><form>
-          <input id="single" type="radio" name="family" value="single"> <strong>1</strong><br>
-          <input id="married" type="radio" name="family" value="married"> <strong>2</strong><br>
-          <input id="kids" type="radio" name="family" value="children"><strong>Other</strong>
-        </form></div>
-      </div>
+        <h4>Vacation Temperature</h4>
+        <div id="temperature">
+          <div class="col-md-3">
+            <form>
+              <input id="hot" type="radio" name="temp" value="hot"> <strong>Hot</strong><br>
+              <input id="cool" type="radio" name="temp" value="cool"> <strong>Cool</strong><br>
+              <input id="icy" type="radio" name="temp" value="icy"> <strong>Icy</strong>
+            </form>
+          </div>
+        </div>
 
         <h4>Food Preference</h4>
-
-
-    <div id="food">
+      <div id="food">
         <form>
-      <div class="col-md-3">
-        <input id="burger" type="radio" name="food" value="burger" checked><strong> Burger</strong><br>
-        <input id="fish" type="radio" name="food" value="fish"> <strong>Fish<strong><br>
-          <input id="pizza" type="radio" name="food" value="pizza"><strong>Pizza</strong>
+          <div class="col-md-3">
+            <input id="burger" type="radio" name="food" value="burger"><strong>Burger</strong><br>
+            <input id="fish" type="radio" name="food" value="fish"> <strong>Fish<strong><br>
+            <input id="pizza" type="radio" name="food" value="pizza"><strong>Pizza</strong>
+          </div>
+
+          <button id="submit" type="submit" class="btn btn-md btn-info">Submit</button>
+
         </form>
       </div>
     </div>
   </div>
-</div>
 
 
-<h1 class="col-sm-1">You're Suggested Destination is...</h1>
-        </div>
+    <h1 class="col-sm-1">You're Suggested Destination is...</h1>
+      <div class="place" id="mexico">
+        <h1>Puerto Vallarta Mexico!</h1>
+          <img class="img-responsive" src="http://www.voyagesdestination.com/images/destinations/16/Puerto-Vallarta-aerial.jpg" alt="Puerto Vallarta, Mexico" />
       </div>
-    </div>
-    <!--- Mexico Hidden unless user selects Warm weather -->
-    <div id="mexico">
-<h1>Puerto Vallarta Mexico!</h1>
-<img class="img-responsive" src="http://www.voyagesdestination.com/images/destinations/16/Puerto-Vallarta-aerial.jpg" alt="Puerto Vallarta, Mexico" />
-    </div>
 
-    <div id="antarctica">
-<h1>Antarctica!</h1>
-<img class="img-responsive" src="http://wlp.wharton.upenn.edu/wp-content/uploads/2015/01/Antarctica_2004_041_-_center.jpg" alt="Antarctica" />
-    </div>
+      <div class="place" id="antarctica">
+        <h1>Antarctica!</h1>
+        <img class="img-responsive" src="http://wlp.wharton.upenn.edu/wp-content/uploads/2015/01/Antarctica_2004_041_-_center.jpg" alt="Antarctica" />
+      </div>
 
-    <div id="pnw">
-      <h1>The Great Pacific Northwest.</h1>
-      <img class="img-responsive" src="https://images.trvl-media.com/media/content/shared/images/travelguides/destination/178299/Portland-20917.jpg" alt="P-Town" /></div>
+      <div class="place" id="pnw">
+        <h1>The Great Pacific Northwest.</h1>
+        <img class="img-responsive" src="https://images.trvl-media.com/media/content/shared/images/travelguides/destination/178299/Portland-20917.jpg" alt="P-Town">
+      </div>
 
-      <div id="korea">
+      <div class="place" id="korea">
         <h1>North Korea.</h1>
         <img class="img-responsive" src="http://cdn.newsapi.com.au/image/v1/15e03fedeb415b6b804be55cb9201d64" alt="korea" />
-  </div>
-       <div id="newyork">
-         <h1>New York, New York.</h1>
-         <img class="img-responsive" src="http://enpundit.s3.amazonaws.com/wp-content/uploads/2013/05/nyc-skyline-earth-2.jpg" alt="New York" />
-  </div>
-    <div id="texas">
-  <h1>Houston, Texas</h1>
-  <img src="http://assets3.thrillist.com/v1/image/1200779/size/tl-horizontal_main/these-are-miami-s-8-best-under-the-radar-burgers" alt="Texas" />
+      </div>
 
-    </div>
+      <div class="place" id="newyork">
+        <h1>New York, New York.</h1>
+        <img class="img-responsive" src="http://enpundit.s3.amazonaws.com/wp-content/uploads/2013/05/nyc-skyline-earth-2.jpg" alt="New York" />
+      </div>
+
+      <div class="place" id="texas">
+        <h1>Houston, Texas</h1>
+        <img src="http://assets3.thrillist.com/v1/image/1200779/size/tl-horizontal_main/these-are-miami-s-8-best-under-the-radar-burgers" alt="Texas" />
+      </div>
+<div class="place" id="iraq">
+        <h1>Baghdad, Iraq </h1>
+        <img src="http://www.dokan-air.com/fileadmin/user_upload/DokanBilder/city_baghdad/baghdad_mosque_01.jpg" alt="Iraq" />
+      </div>
+      <div class="place" id="greenland">
+        <h1>Nuuk, Greenland</h1>
+        <img src="http://www.letstravelsomewhere.com/wp-content/uploads/2013/01/gerald-zinnecker-greenland-featured-2.jpg" alt="Greenland" />
+      </div>
+      <div class="place" id="alaska">
+        <h1>Juneau, Alaska</h1>
+        <img src="http://snowbrains.com/wp-content/uploads/2015/09/alaska3.jpg" alt="Alaska" />
+      </div>
+
   </body>
 </html>
